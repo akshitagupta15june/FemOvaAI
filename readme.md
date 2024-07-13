@@ -4,7 +4,7 @@
 
 ## What it does 💘
 
-**FemOvaAI** is an advanced AI-driven system designed to detect Polycystic Ovarian Syndrome (PCOS) from ultrasound images. Utilizing the power of YOLOv8, a cutting-edge object detection model, our system analyzes images to classify them into two categories: **"PCOS"** and **"No PCOS."** This enables healthcare professionals to make informed decisions quickly, enhancing the diagnostic process and potentially improving patient outcomes.
+**FemOvaAI** is an advanced AI-driven system designed to detect Polycystic Ovarian Syndrome (PCOS) from ultrasound images. Utilizing the power of YOLOv8, a cutting-edge object detection model, our system analyzes images to classify them into two categories: **"PCOS"** and **"No PCOS."**  This enables healthcare professionals to make informed decisions quickly, enhancing the diagnostic process and potentially improving patient outcomes.
 
 ## How we built it ⚙️
 
@@ -16,11 +16,12 @@ We built **FemOvaAI** using the following steps:
 
 ▶️[Roboflow PCOS Public Dataset](https://universe.roboflow.com/vanessas/pcos2)
 
-**Data Collection and Preparation**: We used a publicly available dataset mentioned above containing 234 ultrasound images with 1363 labels, images are labeled into two classes: "PCOS" and "No PCOS." The dataset was split into training and testing sets to ensure robust model evaluation.
+**Data Collection and Preparation**: We utilized a publicly available dataset containing 234 ultrasound images, each annotated with one or more of 1363 labels. The images are categorized into two classes: "PCOS" (Polycystic Ovary Syndrome) and "No PCOS." To ensure robust model evaluation, we split the dataset into training and testing sets.
 
 **Model Selection**: We chose **YOLOv8** for its superior performance in object detection tasks. YOLOv8x architecture allows for real-time detection and classification, making it ideal for medical image analysis.
 
-**Training the Model**: The training process involved feeding the labeled ultrasound images into the YOLOv8 model. We applied various data augmentation techniques to enhance the model's generalization capabilities and prevent overfitting.
+**Training the Model**: The training process involved feeding the labeled ultrasound images into the YOLOv8 model. To enhance the model's generalization capabilities and prevent overfitting, we applied various data augmentation techniques. These techniques included rotations, flips, and brightness adjustments, among others.
+
 
 To checkout Kaggle👉🏻 [code](https://www.kaggle.com/code/akshitagupta1506/pcos-detection)
 
